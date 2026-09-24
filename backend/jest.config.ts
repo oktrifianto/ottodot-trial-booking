@@ -5,4 +5,5 @@ module.exports = {
   transform: { '^.+\\.(t|j)s$': 'ts-jest' },
   testEnvironment: 'node',
   testTimeout: 15000,
+  globalSetup: '<rootDir>/test/global-setup.ts',
 };
