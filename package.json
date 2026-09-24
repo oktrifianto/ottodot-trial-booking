@@ -1,0 +1,11 @@
+{
+	"name": "ottodot-trial-booking",
+	"private": true,
+	"packageManager": "pnpm@10.17.1",
+	"scripts": {
+		"dev:backend": "pnpm --dir backend start:dev",
+		"dev:frontend": "pnpm --dir frontend dev",
+		"build": "pnpm --recursive run build",
+		"lint": "pnpm --recursive run lint"
+	}
+}
