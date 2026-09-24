@@ -12,4 +12,10 @@ async function bootstrap() {
   // eslint-disable-next-line no-console
   console.log(`Backend listening on http://localhost:${port}`);
 }
-bootstrap();
+
+// intended to fix pnpm lint (Oxlint) `no-floating-promises` rule
+bootstrap().catch((err) => {
+  // eslint-disable-next-line no-console
+  console.error('Failed to start backend:', err);
+  process.exit(1);
+});
