@@ -47,9 +47,7 @@ never pollutes what you're demoing in the UI.
 
 ## Time spent
 
-## Time spent
-
-Total: ~3h 17m (started 20:00 GMT+7, finished 23:17 GMT+7)
+Total: ~3h 23m (started 20:00 GMT+7, finished 23:23 GMT+7)
 
 | Phase | Time |
 |---|---|
@@ -60,7 +58,7 @@ Total: ~3h 17m (started 20:00 GMT+7, finished 23:17 GMT+7)
 | Fix test data cleanup issue | 12m |
 | Debugging (env vars, TS strict mode) | 3m |
 | Manual testing across UI & API, fix linter | 46m |
-| README + AI_USAGE.md | 17m |
+| README + AI_USAGE.md | 23m |
 
 ## Assumptions
 
