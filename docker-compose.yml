@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: ottodot
       POSTGRES_DB: ottodot
     ports:
-      - "5432:5432"
+      - "5433:5432"  # intended to avoid conflict with my local Postgres on 5432
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
