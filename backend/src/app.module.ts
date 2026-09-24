@@ -1,21 +1,9 @@
 import { Module } from '@nestjs/common';
-import { createObserveModule } from '@nestjs/observe';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
-export const { ObserveModule, ObserveInstrument } = createObserveModule();
+import { DbModule } from './db/db.module';
+import { ClassesModule } from './classes/classes.module';
+import { BookingsModule } from './bookings/bookings.module';
 
 @Module({
-  imports: [
-    // Distributed tracing, auto-correlated logs, request/job metrics, error
-    // telemetry, alarms, and more — out of the box. Sign up at https://observe.nestjs.com
-    ObserveModule.forRoot({
-      appKey: 'YOUR_APP_KEY',
-      appSecret: 'YOUR_APP_SECRET',
-      serviceId: 'backend',
-    }),
-  ],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [DbModule, ClassesModule, BookingsModule],
 })
 export class AppModule {}
