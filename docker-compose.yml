@@ -1,4 +1,4 @@
-# Only the database is containerized. Backend (Node) and frontend (Vite)
+# Only the database is containerized. Backend (Node) and frontend (Vite) run natively
 services:
   db:
     image: postgres:16-alpine
